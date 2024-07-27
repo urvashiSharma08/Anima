@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floral-Workshop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="./bloom.css">
+</head>
+
+<body class="bg-pink-50" id="body">
+  <nav class="bg-pink-50 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center" id="logodiv">
+        <span class="ml-2 text-3xl font-bold" id="logo">🌷EVE<span class="text-pink-500" id="logo">RBLOOM</span></span>
+      </div>
+      <!-- Menu Links -->
+      <div class="hidden sm:flex space-x-4 text-2xl font-medium" id="menu">
+        <a href="#"
+          class="text-pink-600 underline hover:text-pink-600 decoration-wavy underline-offset-8 decoration-pink-600">Home</a>
+        <a href="#main"
+          class="text-black-600 hover:text-pink-600 hover:underline decoration-wavy hover:underline-offset-8 hover:decoration-pink-600">Shop</a>
+        <a href="#blog"
+          class="text-black-600 hover:text-pink-600  hover:underline decoration-wavy hover:underline-offset-8 hover:decoration-pink-600">Blog</a>
+        <a href="#about-team"
+          class="text-black-600 hover:text-pink-600 hover:underline decoration-wavy hover:underline-offset-8 hover:decoration-pink-600">About</a>
+        <a href="#service-intro"
+          class="text-black-600 hover:text-pink-600 hover:underline decoration-wavy hover:underline-offset-8 hover:decoration-pink-600">Services</a>
+        <a href="#footer"
+          class="text-black-600 hover:text-pink-600 hover:underline decoration-wavy hover:underline-offset-8 hover:decoration-pink-600">Contact
+          Us</a>
+      </div>
+      <!-- Icons -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-pink-800 hover:text-pink-800">
+          <i class='bx bx-user text-2xl'></i>
+        </a>
+        <a href="#" class="text-pink-800 hover:text-pink-800">
+          <i class='bx bx-shopping-bag text-2xl'></i>
+        </a>
+        <!-- Menu Icon for sm -->
+        <button class="block sm:hidden focus:outline-none mobile-menu-button">
+          <i class='bx bx-menu text-2xl'></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden sm:hidden" id="menu">
+      <a href="#"
+        class="block text-pink-800 hover:text-gray-600 px-2 py-1 font-medium hover:text-pink-500 hover:underline decoration-wavy hover:underline-offset-8">Home</a>
+      <a href="#"
+        class="block text-gray-800 hover:text-gray-600 px-2 py-1 font-medium hover:text-pink-500 hover:underline decoration-wavy hover:underline-offset-8">Shop</a>
+      <a href="#"
+        class="block text-gray-800 hover:text-gray-600 px-2 py-1 font-medium hover:text-pink-500 hover:underline decoration-wavy hover:underline-offset-8">Blog</a>
+      <a href="#"
+        class="block text-gray-800 hover:text-gray-600 px-2 py-1 font-medium hover:text-pink-500 hover:underline decoration-wavy hover:underline-offset-8">About</a>
+      <a href="#"
+        class="block text-gray-800 hover:text-gray-600 px-2 py-1 font-medium hover:text-pink-500 hover:underline decoration-wavy hover:underline-offset-8">Contact
+        Us</a>
+    </div>
+  </nav>
+  <header>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <div class="item-1 space-y-4">
+            <div class="name text-3xl md:text-6xl font-bold text-pink-600" id="tagline">Welcome</div>
+            <div class="caption text-2xl md:text-4xl font-semibold text-gray-700" id="capt">2024 Flower Trend</div>
+            <div class="des-1 text-lg md:text-2xl text-gray-600" id="des">Making Every Occasion Special with Flowers</div>
+        </div>
+
+          <div class="slide">
+            <div class="item-2 space-y-4">
+              <div class="name-1 text-3xl md:text-6xl font-bold text-pink-600" id="tagline">Find your happiness</div>
+              <div class="caption-1 text-2xl md:text-4xl font-semibold text-gray-700" id="capt">The best gifts for those you love.</div>
+              <div class="des-2 text-lg md:text-2xl text-gray-600" id="des">Celebrating Life's Special Moments with Us</div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="item-3 space-y-4">
+              <div class="name-2 text-3xl md:text-6xl font-bold text-pink-600" id="tagline">Deal of the Day!</div>
+              <div class="caption-2 text-2xl md:text-4xl font-semibold text-gray-700" id="capt">Mother's Day Special</div>
+              <div class="des-3 text-lg md:text-2xl text-gray-600" id="des">Save 20% Use code MOMSDAY20 at checkout.</div>
+            </div>
+          </div>
+          <div class="button-container">
+            <a href="#" class="responsive-button">Shop Now</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="mid">
+    <div class="container mx-auto p-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- Left side -->
+        <div class="lg:w-1/2 text-center lg:text-left p-10" id="Right">
+          <h2 class="text-lg text-gray-600 mb-0 ml-60" id="title">Fresh Flowers</h2>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 p-5 mx-10 text-center">From Our Garden to Your Table</h1>
+          <p class="text-gray-800 mb-6 text-xl text-center" id="subtitle">
+            Flowers are carefully selected and handpicked by expert florists to bring smile and happiness.
+          </p>
+          <button class="bg-black text-white px-6 py-2 rounded hover:bg-pink-400 ml-60 transition duration-300"
+            id="shop">SHOP
+            NOW</button>
+        </div>
+        <!-- Right side images -->
+        <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 p-10" id="left">
+          <div class="w-full h-98">
+            <img src="./images/section-2.2.jpg" alt="" class="w-full h-5/6 object-cover rounded shadow">
+          </div>
+          <div class="w-full flex flex-col gap-4">
+            <img src="./images/section-2.1.jpg" alt="" class="w-full h-48 object-cover rounded shadow">
+            <img src="./images/section.jpg" alt="" class="w-full h-48 object-cover rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="bg-pink-50" id="main">
+    <section class="main-section md:flex md:items-center md:justify-between">
+      <div class="container mx-auto px-4 text-center md:text-center md:w-1/2">
+        <h3 class="text-xl text-gray-500" id="gift">Wonderful Gifts</h3>
+        <h1 class="text-6xl font-bold mb-4 text-pink-500" id="shop-product">Shop our product</h1>
+        <p class="text-gray-700 mb-8 " id="sub-p">all varieties of flowers available in different shapes and types.
+          Special hand-tied bouquet.</p>
+      </div>
+    </section>
+    <div class="container mx-auto p-20" id="shop-cards">
+      <div class="flex flex-wrap justify-around ">
+        <!-- Card-->
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-container-first">
+          <span class="absolute bg-pink-500 text-white px-2 py-1 text-xs font-bold uppercase top-2 left-2">Sale!</span>
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-1.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers color tulips stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 160.00 <span class="line-through text-gray-500 ml-2">₨ 190.00</span>
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-container-2">
+          <img class="h-2/3 hover:h-full w-full object-cover  bg-pink-200" id="card-img" src="./images/shop-10.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers lupine yellow stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 80.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-container-3">
+          <img class="h-2/3 hover:h-full w-full object-cover  bg-pink-200" id="card-img" src="./images/shop-3.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers greeny stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 85.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-container-4">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-4.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Lily-Daisy stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 210.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-1">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-5.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers orange stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 150.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-2">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-6.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers narcissus stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 90.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-3">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-7.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers marigold stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 180.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="card-4">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-8.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Periwinkle stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 199.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="container-1">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-9.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Red-rose stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 249.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="container-2">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-2.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Honeysuckle stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 199.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="container-3">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-11.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Jasmine stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 150.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <div class="card w-64 h-68 bg-white rounded-lg shadow-md m-4 pb-2 relative" id="container-4">
+          <img class="h-2/3 hover:h-full w-full object-cover bg-pink-200" id="card-img" src="./images/shop-12.png"
+            alt="">
+          <div class="p-4 text-center" id="text-container">
+            <h3 class="text-lg font-semibold">Flowers Sunflower stick</h3>
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-yellow-500">★★★☆☆</span>
+            </div>
+            <div class="text-pink-500 font-bold">₨ 180.00
+            </div>
+          </div>
+          <div class="add-to-cart">Add to Cart</div>
+        </div>
+        <button class="bg-black mx-60 my-10 text-white px-4 py-2 rounded hover:bg-pink-400  transition duration-300"
+          id="product">VIEW ALL PRODUCTS</button>
+      </div>
+  </main>
+  <section class="blog" id="blog">
+    <div id="heading">
+      <h1 class="text-6xl font-bold mb-4 text-center text-pink-500" id="blog-product">Articles from Our Blog</h1>
+      <p class="text-gray-700 mb-8 text-center" id="sub-p">A perfect blend of creativity, energy, communication,
+        happiness and love. Let us arrange a smile for you.</p>
+    </div>
+  </section>
+  <section class="blog-grid grid grid-cols-1 md:grid-cols-3 gap-10 px-20 py-8 ml-10" id="blog-card">
+    <article class="blog-item bg-white rounded-lg shadow-md overflow-hidden  hover:shadow-zinc-400" id="article-1">
+      <img src="./images/blog-1.png" alt="" class="w-full h-240 object-cover">
+      <div class="p-4 text-center">
+        <p class="text-x text-pink-600 mb-2" id="date">June 11 , 2024</p>
+        <h3 class="text-gray-500 mb-4 font-bold" id="blog-subtitle">The nicest things are always made of joy with love
+        </h3>
+        <a href="#"
+          class="inline-block px-3 py-1 text-white hover:text-pink-700 transition duration-300 ease-in-out bg-rose-300 rounded-md">Read
+          More</a>
+      </div>
+    </article>
+    <article class="blog-item bg-white rounded-lg shadow-md overflow-hidden hover:shadow-zinc-400" id="article-2">
+      <img src="./images/blog-2.png" alt="" class="w-full h-240 object-cover">
+      <div class="p-4 text-center">
+        <p class="text-x  text-pink-600 mb-2">June 19 , 2024</p>
+        <h3 class="text-gray-500 mb-4 font-bold" id="blog-subtitle">Everlasting beauty of flowers: amazing photoshoot
+        </h3>
+        <a href="#"
+          class="inline-block px-3 py-1 text-white hover:text-pink-700 transition duration-300 ease-in-out bg-rose-300 rounded-md">Read
+          More</a>
+      </div>
+    </article>
+    <article class="blog-item bg-white rounded-lg shadow-md overflow-hidden hover:shadow-zinc-400" id="article-3">
+      <img src="./images/blog-3.png" alt="" class="w-full h-240 object-cover">
+      <div class="p-4 text-center">
+        <p class="text-x text-pink-600 mb-2">June 29 , 2024</p>
+        <h3 class="text-gray-500 mb-4 font-bold" id="blog-subtitle">The most extravagant weddings of Viktorian era
+        </h3>
+        <a href="#"
+          class="inline-block px-3 py-1 text-white hover:text-pink-700 transition duration-300 ease-in-out bg-rose-300 rounded-md">Read
+          More</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="text-center p-10" id="about">
+    <h2 class="text-5xl font-bold mt-20 text-pink-500" id="abt-title">Our Commitment to Floral Excellence...</h2>
+    <p class="text-gray-600 mx-20 my-10" id="abt-subtitle">
+      "Ready to experience the difference? Explore our flower arrangements <br>online or visit our shop to create a
+      custom
+      bouquet. We can't wait to help you<br> celebrate life's special moments with beautiful flowers!"
+    </p>
+    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-2 px-20 gap-y-20 m-20" id="box">
+      <div class="flex items-start space-x-4" id="abt-sec-1">
+        <div class="text-gray-600 mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4.5em" height="4.5em" viewBox="0 0 48 48" class="svg">
+            <g fill="#F68EB1">
+              <path fill-rule="evenodd"
+                d="M23.992 26h.04c5.523 0 10-4.477 10-10s-4.477-10-10-10h-.08c-5.486.043-9.92 4.504-9.92 10s4.434 9.957 9.92 10zm7.978-9h-2q-.062 1.037-.245 2h1.726c.255-.63.432-1.301.52-2m-1.693 4h-1.08c-.205.59-.445 1.143-.716 1.65A8 8 0 0 0 30.277 21m-2.592-2c.137-.627.234-1.297.281-2h-2.934v2zm-2.653 2h2.023a8.5 8.5 0 0 1-.527 1.042c-.5.831-1.017 1.345-1.496 1.636zm-2-2v-2h-2.998c.047.703.144 1.373.281 2zm-2.087 2h2.087v2.716c-.496-.284-1.038-.805-1.56-1.674A8.5 8.5 0 0 1 20.945 21m-2.67-2q-.183-.963-.245-2h-1.936c.087.699.264 1.37.52 2zm-.488 2h1.016c.195.564.424 1.094.68 1.581A8 8 0 0 1 17.787 21m12.183-6a16 16 0 0 0-.245-2h1.726c.255.63.432 1.301.52 2zm.307-4h-1.08a11.5 11.5 0 0 0-.716-1.65A8 8 0 0 1 30.277 11m-5.245 0h2.023a8.5 8.5 0 0 0-.527-1.042c-.5-.832-1.017-1.345-1.496-1.636zm2.653 2h-2.653v2h2.934a14 14 0 0 0-.281-2m-4.653-4.716V11h-2.087q.242-.567.527-1.042c.521-.869 1.064-1.39 1.56-1.674m0 4.716h-2.717a14 14 0 0 0-.281 2h2.998zm-3.55-3.581a11.6 11.6 0 0 0-.68 1.581h-1.015a8 8 0 0 1 1.696-1.581M18.276 13h-1.662a8 8 0 0 0-.52 2h1.937q.062-1.037.245-2"
+                clip-rule="evenodd" />
+              <path
+                d="M10.109 32.621c.567.602 1.13 1.2 1.66 1.96V36h7.433v-1.419c-.133-1.104-.367-3.093-.388-3.646c-.028-.778-1.072-2.196-1.072-2.196l-3.205-4.04s-.907-.958-1.426-2.02c-.52-1.063-1.624.274-1.77 1.23c-.148.956.132 1.46.132 1.46l1.83 3.638s-2.122-2.907-2.781-4.075c-.334-.592-.427-1.846-.532-3.247c-.101-1.365-.213-2.87-.568-4.04c-.72-2.37-2.802-1.777-3.163-.717c-.36 1.059-.279 8.058-.148 9.225c.103.914.654 1.808 1.275 2.816c.172.28.35.568.525.867c.696 1.192 1.45 1.993 2.198 2.785m26.124 1.96c.53-.76 1.093-1.358 1.66-1.96c.748-.792 1.502-1.593 2.199-2.785c.174-.3.352-.587.524-.866c.621-1.008 1.172-1.903 1.275-2.817c.131-1.167.213-8.166-.148-9.225c-.361-1.06-2.443-1.653-3.163.718c-.354 1.17-.466 2.674-.568 4.039c-.105 1.401-.198 2.655-.532 3.247c-.659 1.169-2.782 4.075-2.782 4.075l1.831-3.638s.28-.504.133-1.46s-1.251-2.293-1.77-1.23c-.52 1.062-1.427 2.02-1.427 2.02l-3.205 4.04s-1.044 1.418-1.072 2.196c-.02.553-.255 2.542-.388 3.646V36h7.433zM26 41a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1zm-3.998 0a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1z" />
+            </g>
+          </svg>
+        </div>
+        <div id="abt-text">
+          <h3 class="text-2xl font-semibold mb-2 text-left" id="sec">Your Trusted Source for Exquisite Flowers</h3>
+          <p class="text-gray-600 text-left" id="sec-des">
+            Trustworthy floral businesses consistently deliver fresh, high-quality flowers, provide exceptional
+            customer
+            service, ensure timely and accurate deliveries.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4" id="abt-sec-2">
+        <div class="text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24" class="svg">
+            <path fill="#F68EB1"
+              d="M12 3.75a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5m-4 9.5A3.75 3.75 0 0 0 4.25 17v1.188c0 .754.546 1.396 1.29 1.517c4.278.699 8.642.699 12.92 0a1.537 1.537 0 0 0 1.29-1.517V17A3.75 3.75 0 0 0 16 13.25h-.34c-.185 0-.369.03-.544.086l-.866.283a7.251 7.251 0 0 1-4.5 0l-.866-.283a1.752 1.752 0 0 0-.543-.086z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-left" id="sec">Let Us Help You Express Yourself with Flowers
+          </h3>
+          <p class="text-gray-600 text-left" id="sec-des">
+            Whether you’re celebrating a special occasion, offering condolences, or wanting to brighten someone’s
+            day, our expert florists are dedicated to helping you find the perfect arrangement to express your
+            feelings.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4" id="abt-sec-1">
+        <div class="text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 512 512" class="svg">
+            <path fill="none" d="M346 110a34 34 0 0 0-68 0v34h34a34 34 0 0 0 34-34m-112 0a34 34 0 1 0-34 34h34Z" />
+            <path fill="#F68EB1"
+              d="M234 144h44v112h164a22 22 0 0 0 22-22v-68a22 22 0 0 0-22-22h-59.82A77.95 77.95 0 0 0 256 55.79A78 78 0 0 0 129.81 144H70a22 22 0 0 0-22 22v68a22 22 0 0 0 22 22h164Zm44-34a34 34 0 1 1 34 34h-34Zm-112 0a34 34 0 1 1 68 0v34h-34a34 34 0 0 1-34-34m112 370h132a22 22 0 0 0 22-22V288H278ZM80 458a22 22 0 0 0 22 22h132V288H80Z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-left" id="sec">Perfect Gift For Your Beloved</h3>
+          <p class="text-gray-600 text-left" id="sec-des">
+            The perfect flower gift not just about the type of flowers but also about the sentiment behind the
+            gesture, creating a meaningful connection between you and your loved one.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4" id="abt-sec-2">
+        <div class="text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24" class="svg">
+            <path fill="#F68EB1"
+              d="M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8A2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25c.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25c-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-left " id="sec">We Speak the Language of Flowers </h3>
+          <p class="text-gray-600 text-left" id="sec-des">
+            At EVERBLOOM, we believe that each flower carries a unique message, capable of expressing love,
+            gratitude, sympathy, and celebration in its delicate petals and vibrant colors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- abt-team section -->
+  <section class="team-section" id="about-team">
+    <h1 class="team">Meet the Team That Makes Miracles Happen</h1>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="./images/team-1.webp" alt="Dwight Clark">
+        <div class="team-member-info">
+          <h2>Dwight Clark</h2>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="overlay">
+          <ul class="social-icons">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="./images/team-2.webp" alt="Alicia Woods">
+        <div class="team-member-info">
+          <h2>Alicia Woods</h2>
+          <p>Customer Service</p>
+        </div>
+        <div class="overlay">
+          <ul class="social-icons">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="./images/team-3.webp" alt="Erica Ryan">
+        <div class="team-member-info">
+          <h2>Erica Ryan</h2>
+          <p>Marketing Associate</p>
+        </div>
+        <div class="overlay">
+          <ul class="social-icons">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="./images/team-4.webp" alt="Freda Casey">
+        <div class="team-member-info">
+          <h2>Freda Casey</h2>
+          <p>Sales Supervisor</p>
+        </div>
+        <div class="overlay">
+          <ul class="social-icons">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center py-20" id="price-cards">
+    <h2 class="text-4xl underline font-bold mb-5 text-pink-500" id="plans">Our Event Plans</h2>
+    <h2 class="text-xl text-pink-800 mb-8" id="sub-plan">PRICES</h2>
+    <div class="container mx-auto flex flex-wrap justify-center gap-6">
+      <!-- Service Card 1 -->
+      <div class="max-w-sm border p-4 bg-white shadow-lg" id="event-container">
+        <img src="./images/b-day-event.jpg" alt="Birthday events"
+          class="w-full h-72 object-cover mb-4" id="event-img">
+        <div class="text-center">
+          <p class="text-2xl font-semibold text-pink-800">₨ 16 <span class="text-sm text-pink-800">per table</span>
+          </p>
+          <h3 class="text-xl font-bold my-2" id="event-name">Birthday events</h3>
+          <p class="text-gray-600" id="event-des">A luxurious and impressive arrangement to mark a milestone
+            birthday.</p>
+          <button class="mt-4 px-4 py-2 bg-pink-100 text-pink-600 font-semibold rounded hover:bg-pink-200">OREDR
+            NOW</button>
+        </div>
+      </div>
+      <!-- Service Card 2 -->
+      <div class="max-w-sm border p-4 bg-white shadow-lg" id="event-container">
+        <img src="./images/wedding-event.jpg" alt="Wedding Events"
+          class="w-full h-72 object-cover mb-4" id="event-img">
+        <div class="text-center">
+          <p class="text-2xl font-semibold text-pink-800">₨ 35 <span class="text-sm text-pink-800">per table</span>
+          </p>
+          <h3 class="text-xl font-bold my-2" id="event-name">Wedding Events</h3>
+          <p class="text-gray-600" id="event-des">A romantic and elegant package for the bride and groom including
+            bouquets, boutonnieres.</p>
+          <button class="mt-4 px-4 py-2 bg-pink-100 text-pink-600 font-semibold rounded hover:bg-pink-200">OREDR
+            NOW</button>
+        </div>
+      </div>
+      <!-- Service Card 3 -->
+      <div class="max-w-sm border p-4 bg-white shadow-lg" id="event-container">
+        <img src="./images/event-3.jpg" alt="Party Events" class="w-full h-72 object-cover mb-4" id="event-img">
+        <div class="text-center">
+          <p class="text-2xl font-semibold text-pink-800">₨ 52 <span class="text-sm text-pink-800">per table</span>
+          </p>
+          <h3 class="text-xl font-bold my-2" id="event-name">Party Events</h3>
+          <p class="text-gray-600" id="event-des">A cheerful and colorful arrangement to brighten someone's special
+            day.</p>
+          <button class="mt-4 px-4 py-2 bg-pink-100 text-pink-600 font-semibold rounded hover:bg-pink-200">OREDR
+            NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-flower h-48 flex items-center justify-center" id="service-intro">
+    <div class="text-left bg-pink-200 bg-opacity-75 p-8 rounded-lg w-11/12" id="service-intro-box">
+      <h2 class="text-2xl font-semibold text-pink-700 mb-2">Join us : <span class="text-black">We loved creating
+          this arrangement just for you!</span> </h2>
+      <p class="text-gray-700 mb-4">"We're honored to be a part of your special occasion. Thank you for choosing us
+        to deliver happiness through flowers!"</p>
+      <button class="px-4 py-2 bg-gray-800 text-white font-semibold rounded">EXPLORE MORE </button>
+    </div>
+  </section>
+  <section class="facility">
+    <h1 class="text-4xl font-bold leading-tight mb-2 md:text-5xl md:leading-snug">We Guarantee High Quality!</h1>
+    <h3 class="text-xl text-pink-500 font-medium mb-4 md:text-2xl">making bouquets with passion</h3>
+    <div class="facility-container">
+      <div class="facility-box">
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 512 512">
+            <path fill="#fff"
+              d="m25.45 63.043l-4.364 17.463l8.73 2.18l60.624 15.16l29.402 44.1l62.44 187.32l-36.845 73.693h17.827a31.6 31.6 0 0 0-3.264 14c0 17.567 14.433 32 32 32s32-14.433 32-32c0-5.01-1.178-9.762-3.264-14h102.528a31.6 31.6 0 0 0-3.264 14c0 17.567 14.433 32 32 32s32-14.433 32-32c0-5.01-1.178-9.762-3.264-14H393v-18H174.562l23-46h192.924l70-210h-327.67L101.56 82.07L34.183 65.227zm115.038 83.914H231v46h-75.178zm108.512 0h78v46h-78zm96 0h90.512l-15.334 46H345zm-183.18 64H231v46h-53.846zm87.18 0h78v46h-78zm96 0h69.18l-15.334 46H345zm-161.846 64H231v46h-32.514zm65.846 0h78v46h-78zm96 0h47.846l-15.332 46H345zm-153 128c7.84 0 14 6.16 14 14s-6.16 14-14 14s-14-6.16-14-14s6.16-14 14-14m160 0c7.84 0 14 6.16 14 14s-6.16 14-14 14s-14-6.16-14-14s6.16-14 14-14" />
+          </svg>
+        </div>
+        <h4>Online Shop</h4>
+      </div>
+      <div class="facility-box">
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24">
+            <path fill="#fff"
+              d="m7 22l-1.5-6h13L17 22zm5-14q0-2.5 1.75-4.25T18 2q0 2.25-1.425 3.9T13 7.9V10h8v5H3v-5h8V7.9q-2.15-.35-3.575-2T6 2q2.5 0 4.25 1.75T12 8" />
+          </svg>
+        </div>
+        <h4>100% Freshness</h4>
+      </div>
+      <div class="facility-box">
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 15 15">
+            <path fill="#fff"
+              d="M2.5 6a2.49 2.49 0 0 0-1.414.438a6.502 6.502 0 0 1 12.828 0A2.488 2.488 0 0 0 12.5 6A1.5 1.5 0 0 0 11 7.5v4a1.5 1.5 0 0 0 .947 1.395A1.5 1.5 0 0 1 10.5 14H8v1h2.5a2.5 2.5 0 0 0 2.458-2.042A2.5 2.5 0 0 0 15 10.5v-3a7.5 7.5 0 0 0-15 0v3A2.5 2.5 0 0 0 2.5 13A1.5 1.5 0 0 0 4 11.5v-4A1.5 1.5 0 0 0 2.5 6" />
+          </svg>
+        </div>
+        <h4>24/7 support</h4>
+      </div>
+      <div class="facility-box">
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="4.5em" height="4.5em" viewBox="0 0 512 512">
+            <path fill="#fff"
+              d="M256.156 21.625c-45.605 0-86.876 2.852-117.22 7.563c-15.17 2.355-27.554 5.11-36.874 8.53c-4.66 1.71-8.568 3.515-11.968 6.094c-3.238 2.457-6.65 6.36-6.97 11.75h-.75c0 10.08.362 20.022 1.064 29.813H57.53c-.12-7.952.003-15.922.376-23.875l-26.812-6.28C22.55 161.892 64.1 265.716 140.564 339.655l15.655-29.594a251 251 0 0 1-12.157-10.75a143.5 143.5 0 0 1 19.28-16.843c13.468 13.172 28.182 23.565 43.813 30.655c22.114 17.744 8.053 29.368-23.5 36.25c58.863 10.6 38.948 62.267-14.125 92.313c-2.14.27-4.256.523-6.28.812c-12.047 1.718-21.876 3.71-29.406 6.25c-3.765 1.27-6.958 2.6-9.906 4.656c-2.95 2.055-6.626 5.705-6.626 11.406s3.677 9.32 6.626 11.375c2.948 2.055 6.14 3.387 9.906 4.657c7.53 2.54 17.36 4.532 29.406 6.25c24.094 3.436 56.784 5.53 92.906 5.53s68.812-2.094 92.906-5.53c12.048-1.718 21.877-3.71 29.407-6.25c3.764-1.27 6.957-2.602 9.905-4.656c2.948-2.055 6.625-5.674 6.625-11.375c0-5.702-3.677-9.352-6.625-11.407s-6.14-3.387-9.906-4.656c-7.53-2.54-17.36-4.532-29.408-6.25c-2.013-.287-4.12-.544-6.25-.813c-53.076-30.045-72.99-81.71-14.125-92.312c-31.568-6.886-45.63-18.522-23.468-36.28c15.74-7.15 30.547-17.655 44.092-30.97c6.648 4.773 12.84 10.038 18.47 15.72a301 301 0 0 1-12.72 12.217l16.188 29.594c79.118-71.955 116.195-179.53 110.03-285l-27.342 7.97c.45 7.61.64 15.19.562 22.75h-25.594a417 417 0 0 0 1.063-29.814h-.75c-.323-5.39-3.763-9.293-7-11.75c-3.402-2.58-7.31-4.383-11.97-6.093c-9.32-3.422-21.704-6.177-36.875-8.532c-30.342-4.71-71.613-7.563-117.22-7.563zm0 18.688c44.822 0 85.426 2.854 114.344 7.343c14.46 2.245 26.06 4.932 33.313 7.594c1.04.382 1.775.75 2.625 1.125c-.85.375-1.58.742-2.625 1.125c-7.252 2.662-18.854 5.38-33.313 7.625c-28.918 4.49-69.522 7.344-114.344 7.344c-44.82 0-85.425-2.855-114.344-7.345c-14.46-2.245-26.06-4.963-33.312-7.625c-1.05-.386-1.77-.748-2.625-1.125c.853-.376 1.577-.74 2.625-1.125c7.252-2.662 18.853-5.35 33.313-7.594c28.918-4.49 69.522-7.343 114.343-7.343zm-197.25 71.874H86.25c8.057 57.878 28.23 108.83 56.188 146.25c-6.974 5.74-13.407 11.968-19.188 18.688c-38.648-46.456-59.042-104.647-64.344-164.938m367.188 0h27C447.51 171.82 425.336 228.34 388.03 275a158.5 158.5 0 0 0-17.842-16.97c27.81-37.38 47.873-88.175 55.906-145.842z" />
+          </svg>
+        </div>
+        <h4>102 awards won</h4>
+      </div>
+      <div class="facility-box">
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 16 16">
+            <path fill="#fff"
+              d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132c-5.825-3.85-1.664-6.843 0-5.132" />
+          </svg>
+        </div>
+        <h4>Personal Gift</h4>
+      </div>
+    </div>
+    </div>
+  </section>
+  <hr class="border-1 border-black mt-20">
+  <footer class="bg-pink-50 mt-20" id="footer">
+    <div class="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
+      <div class="flex space-x-6">
+        <a href="#" class="text-pink-600 hover:text-pink-800"><svg xmlns="http://www.w3.org/2000/svg" width="2em"
+            height="2em" viewBox="-2 -2 24 24" id="svg">
+            <g fill="#ec4884">
+              <path
+                d="M8.695 6.937v1.377H7.687v1.683h1.008V15h2.072V9.997h1.39s.131-.807.194-1.69h-1.576v-1.15c0-.173.226-.404.45-.404h1.128V5h-1.535C8.644 5 8.695 6.685 8.695 6.937" />
+              <path
+                d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4" />
+            </g>
+          </svg></a>
+        <a href="#" class="text-pink-600 hover:text-pink-800"><svg xmlns="http://www.w3.org/2000/svg" width="2em"
+            height="2em" viewBox="-2 -2 24 24" id="svg">
+            <g fill="#ec4884">
+              <path
+                d="M15 6.947c-.368.16-.763.27-1.178.318c.424-.25.748-.646.902-1.117a4.16 4.16 0 0 1-1.304.49A2.06 2.06 0 0 0 11.923 6c-1.133 0-2.051.905-2.051 2.02c0 .158.018.312.053.46a5.854 5.854 0 0 1-4.228-2.11a1.982 1.982 0 0 0-.278 1.015c0 .7.363 1.32.913 1.681a2.076 2.076 0 0 1-.93-.253v.025a2.03 2.03 0 0 0 1.646 1.98a2.108 2.108 0 0 1-.927.034a2.049 2.049 0 0 0 1.916 1.403a4.156 4.156 0 0 1-2.548.864c-.165 0-.328-.01-.489-.028A5.863 5.863 0 0 0 8.144 14c3.774 0 5.837-3.078 5.837-5.748l-.007-.262A4.063 4.063 0 0 0 15 6.947" />
+              <path
+                d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4" />
+            </g>
+          </svg></a>
+        <a href="#" class="text-pink-600 hover:text-pink-800"><svg xmlns="http://www.w3.org/2000/svg" width="2em"
+            height="2em" viewBox="0 0 512 512" id="svg">
+            <path fill="#ec4884"
+              d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32" />
+            <path fill="#ec4884"
+              d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112" />
+          </svg></a>
+        <a href="#" class="text-pink-600 hover:text-pink-800"><svg xmlns="http://www.w3.org/2000/svg" width="2em"
+            height="2em" viewBox="-2 -2 24 24" id="svg">
+            <g fill="#ec4884">
+              <path
+                d="M9.355 11.614C9.1 12.99 8.79 14.31 7.866 15c-.284-2.08.419-3.644.745-5.303c-.556-.964.067-2.906 1.24-2.427c1.445.588-1.25 3.586.56 3.96c1.888.392 2.66-3.374 1.488-4.6c-1.692-1.768-4.927-.04-4.529 2.492c.097.62.718.807.248 1.661c-1.083-.247-1.406-1.127-1.365-2.3c.067-1.92 1.675-3.263 3.289-3.45c2.04-.235 3.954.772 4.219 2.748c.297 2.23-.921 4.646-3.103 4.472c-.59-.047-.84-.35-1.303-.64z" />
+              <path
+                d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4" />
+            </g>
+          </svg></a>
+      </div>
+      <div class="flex items-center" id="footer-logo">
+        <div class="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 64 64">
+            <path fill="#EA94B1"
+              d="m46.5 31.2l-2.8-8.3S52.2 10.6 49 8.3c-3.2-2.3-12.6 9.5-12.6 9.5h-9S18 6.1 14.8 8.3s5.3 14.6 5.3 14.6l-2.8 8.3S3 36.3 4.2 40c1.2 3.7 15.9-.4 15.9-.4l7.3 5.2s.5 14.9 4.5 14.9s4.5-14.9 4.5-14.9l7.3-5.2s14.7 4.1 15.9.4c1.3-3.7-13.1-8.8-13.1-8.8" />
+            <g fill="#e84d88">
+              <path d="M41.8 9.9c0 10-4.4 18.2-9.9 18.2S22 20 22 9.9s7.2-4.2 9.9-4.2s9.9-5.8 9.9 4.2" />
+              <path
+                d="M13 16.5c9.8 3.1 16.4 9.7 14.7 14.8c-1.7 5.1-11 6.6-20.8 3.5c-9.8-3.1-1.9-8-1.1-10.5c.8-2.4-2.6-10.9 7.2-7.8" />
+              <path
+                d="M10.5 45.3c6-8.1 14.5-12.2 18.9-9c4.4 3.1 3.1 12.2-3 20.4c-6 8.1-8.4-.7-10.5-2.2c-2.1-1.6-11.5-1.1-5.4-9.2" />
+              <path
+                d="M37.8 56.5c-6-8.1-7.4-17.2-3-20.4c4.4-3.1 12.9.9 18.9 9c6 8.1-3.3 7.6-5.4 9.1c-2.1 1.6-4.5 10.4-10.5 2.3" />
+              <path
+                d="M57.1 34.6c-9.8 3.1-19.1 1.5-20.8-3.5c-1.6-5.1 5-11.7 14.7-14.8c9.8-3.1 6.4 5.4 7.2 7.9c.8 2.4 8.7 7.3-1.1 10.4" />
+            </g>
+            <ellipse cx="32" cy="32.4" fill="#ffce31" rx="3.8" ry="3.7" />
+          </svg>
+        </div>
+        <span class="text-3xl font-bold " id="logo">EVE<span class="text-pink-500" id="logo">RBLOOM</span></span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <input type="email" placeholder="Email" class="px-4 py-2 rounded-l-lg focus:outline-none">
+        <button class="bg-pink-600 text-white px-4 py-2 rounded-r-lg hover:bg-pink-800">Sign Up</button>
+      </div>
+    </div>
+  </footer>
+  <br><br><br><br>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+  <script src="./bloom.js"></script>
+</body>
+
+</html>

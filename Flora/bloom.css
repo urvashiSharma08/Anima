@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* navbar */
+  nav {
+    backdrop-filter: blur(20px);
+  }
+  #logodiv {
+    font-family: "Playfair Display", serif;
+  }
+  #menu,
+  .caption,.name,.name-1,
+  .name-2,
+  .caption-1,
+  .caption-2,
+  #Right,
+  #shop-product,
+  #blog-product,
+  #abt-title,
+  #sec,
+  .team,
+  #plans,
+  #event-des,
+  #service-intro h2,
+  .facility h1 {
+    font-family: Dancing Script, cursive;
+  }
+  .des,
+  .des-2,
+  #subtitle,
+  .responsive-button,
+  #gift,
+  #shop,
+  #sub-p,
+  #blog-subtitle,
+  #abt-subtitle,
+  #sec-des,
+  .team-member-info,
+  #sub-plan,
+  #event-name,
+  #service-intro p,
+  .facility h3,
+  .facility-box h4 {
+    font-family: Playfair Display, serif;
+  }
+  #title {
+    font-size: 30px;
+  }
+  @media (max-width:520px) {
+   #abt-sec-1 #abt-text h3 , p{
+        text-align: center;
+    }
+   #abt-sec-2 #abt-text h3 , p{
+        text-align: center;
+    }
+  }
+  @media (max-width: 580px) {
+    #service-intro-box h2 {
+      font-size: 25px;
+    }
+    #service-intro-box p {
+      font-size: 10px;
+    }
+    #service-intro-box button {
+      font-weight: 300;
+    }
+    #service-intro {
+      height: 15em;
+    } 
+    footer svg{
+      width:3em;
+      height:3em;
+      padding-bottom: 10px;
+    }
+  }
+  @media (min-width: 639px) {
+    .mobile-menu {
+      display: none;
+    }
+    .team-member {
+      height: 300px;
+    }
+  }
+  @media (max-width: 565px) {
+    #price-cards {
+      padding-top: 50em;
+    }
+    #service-intro-box {
+      padding: 10px;
+    }
+    #service-intro-box h2 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .button-container .responsive-button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+  }
+  @media (max-width: 992px) {
+    .button-container .responsive-button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    .button-container .responsive-button {
+        padding: 8px 14px;
+        font-size: 13px;
+        margin-left:-.5em;
+        margin-top:-5em;
+    }
+  }
+  @media (max-width: 576px) {
+    .button-container .responsive-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+  }
+  @media (max-width: 640px) {
+    #logo {
+      font-size: 20px;
+    }
+    #title {
+      margin-left: 30px;
+    }
+    .responsive-button {
+      margin-left: 20px;
+    }
+    #product {
+      margin-left: 30%;
+    }
+    #blog-card {
+      padding-left: 10px;
+      margin-left: 5em;
+    }
+    #abt-subtitle {
+      text-align: left;
+    }
+    svg {
+      width: 3.5em;
+      height: 3.5em;
+    }
+    #box {
+      margin-left: -0.5em;
+    }
+    .team-member {
+      height: 300px;
+    }
+    #service-intro-box p {
+      font-size: 0.9em;
+    }
+    #service-intro-box button {
+      padding: 5px 10px;
+      font-size: 15px;
+    }
+  }
+   @media (max-width: 1280px) {
+    #event-container {
+      max-width: 20em;
+    }
+  }
+  @media (max-width: 1132px) {
+    #shop{
+      text-align: center;
+      margin-left:8em;
+    }
+    #price-cards {
+      margin-top: 15em;
+    }
+    .team-section {
+      margin-bottom: 10em;
+    }
+    #service-intro-box {
+      padding: 1em;
+    }
+  }
+  
+  @media (max-width:1025px) {
+    #logodiv{
+      margin-left:-6em;
+    }
+    #logo{
+      font-size:25px;
+    }
+    #menu a{
+      font-size:20px;
+      margin-left:20px;
+    }
+    #shop{
+      text-align: center;
+      margin-left:2em;
+    }
+  }
+  @media (min-width:801px) {
+    .slide {
+      min-width: 100%;
+      position: relative;
+      width: 100%;
+      background-size:cover;
+      background-image: url(./images/background-4.webp);
+      animation: bgChange 20s infinite ease forwards;
+      animation-delay:1s;
+      background-repeat:no-repeat ;
+    }
+    @keyframes bgChange {
+        45%{
+            background-image: url(./images/background-2.webp);
+      
+        }
+        70%{
+            background-image: url(./images/background-1.jpg);   
+        }
+        100%{
+            background-image: url(./images/background-3.webp);
+        }
+    }
+  }
+  @media (max-width: 800px) {
+    .slide {
+      min-width: 100%;
+      position: relative;
+      width: 100%;
+      background-size:cover;
+      background-repeat:no-repeat ;
+      background-image: url(./images/home-1.webp);
+      animation: bgChangeMobile 20s infinite ease forwards;
+      animation-delay: 1.2s;
+    }
+  
+    @keyframes bgChangeMobile {
+      45% {
+        background-image: url(./images/home-2.jpg) ;
+      }
+      70% {
+        background-image: url(./images/home-3.jpg);
+      }
+      100% {
+        background-image: url(./images/home-4.jpg);
+      }
+    }
+    .slide #tagline{
+      font-weight: 400;
+      font-family:  Playfair Display, serif;
+    }
+    .slide #capt{
+      font-weight: 400;
+      font-family:  Playfair Display, serif;
+    }
+    .slide #des{
+      font-weight: 400;
+      font-family:  Playfair Display, serif;
+    }
+  }
+   /* header */ 
+  .slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom:1em;
+  }
+  .slides {
+    display: flex;
+    height: 100%;
+    animation: slide 15s infinite;
+    animation-delay: 2s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slides .slide .item-1, 
+  .item-2, 
+   .item-3 {
+    margin-left:2em;
+    margin-top:5em;
+      position: absolute;
+      /* display: block; */
+      top: 2em;
+      color: brown;
+      font-size: 2em;
+      animation-duration: 20s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+  }
+  
+  .slides .slide .item-1 {
+      animation-name: anim-1;
+  }
+  
+  .slides .slide .item-2 {
+      animation-name: anim-2;
+  }
+  
+  .slides .slide .item-3 {
+      animation-name: anim-3;
+  }
+  
+  @keyframes anim-1 {
+  
+      0%,
+      8.3% {
+          opacity: 0;
+      }
+  
+      8.3%,
+      25% {
+          opacity: 1;
+      }
+  
+      33.33%,
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  @keyframes anim-2 {
+  
+      0%,
+      33.33% {
+          opacity: 0;
+      }
+  
+      41.63%,
+      58.29% {
+          opacity: 1;
+      }
+  
+      66.66%,
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  @keyframes anim-3 {
+  
+      0%,
+      66.66% {
+          opacity: 0;
+      }
+  
+      74.96%,
+      91.62% {
+          opacity: 1;
+      }
+  
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  .button-container {
+    text-align:left;
+    margin-left:4em;
+    margin-top:26em;
+  }
+  
+  .responsive-button {
+    background-color: #ec4899; /* Pink background */
+    color: white;
+    border: 3px groove white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-end-end-radius: 20px;
+    border-start-start-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .responsive-button:hover {
+    background-color:#ec4899;
+    color: black;
+    transform: scale(1.05);
+  }
+  
+  .responsive-button:active {
+    transform: scale(0.95);
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card .add-to-cart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: pink;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .card:hover .add-to-cart {
+    opacity: 1;
+  }
+  /* about */
+  .svg:hover path {
+    fill: rgba(40, 40, 40, 0.775);
+  }
+  #box h3 {
+    color: rgb(58, 58, 58);
+  }
+  
+  /* about-team */
+  .team-section {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-section h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ec4899;
+  }
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    height: 339px;
+  }
+  .team-member {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+  }
+  .team-member img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .team-member-info {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding:5px;
+    text-align: center;
+  }
+  .team-member-info h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  .team-member-info p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 173, 207, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-member:hover .overlay {
+    opacity: 1;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .social-icons li {
+    display: inline-block;
+  }
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* service */
+  #event-img:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+  }
+  #event-container:hover {
+    box-shadow: 0px 2px 4px #f689bf;
+  }
+  .bg-flower {
+    background-image: url(./images/slide-2.webp); /* Replace with your flower background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  /* service-blogs */
+  .facility {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 6em;
+  }
+  .facility-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3em;
+  }
+  .facility-box {
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    margin-top: 20px;
+  }
+  
+  .svg-icon {
+    background-color: rgb(234, 148, 177);
+    padding: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .svg-icon:hover {
+    /* transform: translateY(-10px); */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: all 0.2s ease-in;
+  }
+  svg:hover path {
+    fill: rgba(57, 57, 57, 0.775);
+  }
+  
+  .svg-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .facility-box h4 {
+    font-size: 1.2em;
+    color: rgb(77, 88, 98);
+    margin: 15px;
+    font-weight: 500;
+  }
+  
